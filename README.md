@@ -104,4 +104,20 @@ input {
 </div>
 
 <div class="card">
-    <h2>🧁 Cupcakes
+    <div class="card product">
+    <h2>🧁 Cupcakes</h2>
+
+    <!-- Image (clickable like the plant) -->
+    <a href="https://www.google.com/search?q=cupcakes&tbm=isch" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Cupcakes_chocolate.jpg/640px-Cupcakes_chocolate.jpg" alt="Cupcakes">
+    </a>
+
+    <p>"Sweet, soft, and guaranteed to make your day 10× better."</p>
+
+    <!-- Pricing added exactly like the plant card -->
+    <p>Single: £2.50<br>Box of 4: £8.00<br>Box of 6: £11.00</p>
+
+    <!-- Order button identical to plant button -->
+    <button onclick="checkout('cupcake')">Order Now</button>
+</div>
+
