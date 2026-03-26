@@ -120,4 +120,8 @@ input {
     <!-- Order button identical to plant button -->
     <button onclick="checkout('cupcake')">Order Now</button>
 </div>
+if (item === 'plant') {
+    window.location.href = "https://buy.stripe.com/test_plant_link";
+}
+
 
