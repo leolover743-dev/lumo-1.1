@@ -123,21 +123,23 @@ input {
 if (item === 'plant') {
     window.location.href = "https://buy.stripe.com/test_plant_link";
 }
-<script>
-function checkout(item) {
-    // ✅ Replace these with your REAL Stripe Payment Links
-    const links = {
-        plant: "https://buy.stripe.com/your_real_plant_link",
-        cupcake: "https://buy.stripe.com/your_real_cupcake_link"
-    };
+<div class="card">
+    <h2>🛒 Checkout</h2>
+    <p>Select what you’d like to buy and you’ll be taken to our secure payment page.</p>
 
-    if (links[item]) {
-        // Send the customer to Stripe's secure hosted checkout page
-        window.location.href = links[item];
-    } else {
-        alert("Sorry, this item is not available right now.");
-    }
-}
-</script>
+    <!-- Spider Plant Checkout -->
+    <button onclick="checkout('plant')">Buy a Spider Plant</button>
+    <br><br>
+
+    <!-- Cupcake Checkout -->
+    <button onclick="checkout('cupcake')">Order Cupcakes</button>
+
+    <p style="margin-top:10px; font-size: 12px; color: #555;">
+        Payments are processed securely by Stripe.  
+        We never see or store your card details.
+    </p>
+</div>
+
+
 
 
