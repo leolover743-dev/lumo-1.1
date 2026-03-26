@@ -123,5 +123,21 @@ input {
 if (item === 'plant') {
     window.location.href = "https://buy.stripe.com/test_plant_link";
 }
+<script>
+function checkout(item) {
+    // ✅ Replace these with your REAL Stripe Payment Links
+    const links = {
+        plant: "https://buy.stripe.com/your_real_plant_link",
+        cupcake: "https://buy.stripe.com/your_real_cupcake_link"
+    };
+
+    if (links[item]) {
+        // Send the customer to Stripe's secure hosted checkout page
+        window.location.href = links[item];
+    } else {
+        alert("Sorry, this item is not available right now.");
+    }
+}
+</script>
 
 
