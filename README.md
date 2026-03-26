@@ -1,9 +1,11 @@
-index.html
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lumo</title>
+
+<!-- ⭐ Favicon (small logo for browser tabs & favourites) -->
+<link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Emoji_u1f331.svg/240px-Emoji_u1f331.svg.png">
 
 <style>
 body {
@@ -13,9 +15,10 @@ body {
     text-align: center;
 }
 
+/* Removed black background + changed text to black */
 .top-bar {
-    background: #111;
-    color: white;
+    background: transparent;
+    color: black;
     padding: 10px;
     font-weight: bold;
 }
@@ -101,59 +104,4 @@ input {
 </div>
 
 <div class="card">
-    <h2>🧁 Cupcakes</h2>
-    <p>You deserve a treat… and lucky for you, we’ve got the sweetest ones right here.</p>
-    <p>Price: £2.50</p>
-    <p>10% of money earned goes to charity ❤️</p>
-
-    <button onclick="checkout('cupcake')">Order Now</button>
-</div>
-
-<!-- ✅ WORKING EMAIL FORM -->
-<div class="card">
-    <h2>Contact</h2>
-
-    <form action="https://formsubmit.co/hugorb2@outlook.com" method="POST">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-
-        <!-- Optional message -->
-        <input type="text" name="message" placeholder="Your message">
-
-        <!-- Disable captcha from FormSubmit -->
-        <input type="hidden" name="_captcha" value="false">
-
-        <button type="submit">Send</button>
-    </form>
-</div>
-
-<div class="card map">
-    <h2>📍 Find Us</h2>
-    <p>Outside Newbury Train Station, Newbury, England</p>
-
-    <iframe
-        width="100%"
-        height="250"
-        loading="lazy"
-        allowfullscreen
-        src="https://www.google.com/maps?q=Newbury+Train+Station,+Newbury,+England&z=17&output=embed">
-    </iframe>
-</div>
-
-<p>© 2026 Lumo — Making the world greener & sweeter 🌍</p>
-
-</div>
-
-<script>
-function checkout(item) {
-    if (item === 'plant') {
-        window.location.href = "https://buy.stripe.com/test_plant_link";
-    }
-    if (item === 'cupcake') {
-        window.location.href = "https://buy.stripe.com/test_cupcake_link";
-    }
-}
-</script>
-
-</body>
-</html>
+    <h2>🧁 Cupcakes
